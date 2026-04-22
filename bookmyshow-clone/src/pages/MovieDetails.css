@@ -1,0 +1,211 @@
+@import url('../index.css');
+
+.movie-details-page {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+.hero-banner {
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.poster-main img {
+    width: 260px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.info-main h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(51, 51, 51, 0.8);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.star {
+    color: var(--bms-red);
+    font-size: 24px;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.votes {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.rate-now {
+    background: white;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.format-chips {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.format-chips span {
+    background: white;
+    color: #333;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.meta-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.book-btn-main {
+    background: var(--bms-red);
+    color: white;
+    padding: 15px 60px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.booking-section {
+    padding: 30px 0;
+}
+
+.date-selector {
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.date-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 60px;
+}
+
+.date-chip.active {
+    background: var(--bms-red);
+    color: white;
+}
+
+.date-chip span {
+    font-size: 12px;
+}
+
+.date-chip .num {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.theater-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.theater-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.theater-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.heart-icon {
+    color: #bbb;
+}
+
+.name-loc h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.name-loc p {
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.showtimes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.showtime-chip {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 20px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.showtime-chip:hover {
+    border-color: var(--bms-red);
+}
+
+.showtime-chip .time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4abd5d;
+    /* Default availability color */
+}
+
+.showtime-chip.fast-filling .time {
+    color: #ffa426;
+}
+
+.showtime-chip.almost-full .time {
+    color: #f84464;
+}
+
+.showtime-chip .cat {
+    font-size: 10px;
+    color: #999;
+    margin-top: 2px;
+}

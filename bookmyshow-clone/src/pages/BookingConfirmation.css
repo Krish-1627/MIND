@@ -1,0 +1,151 @@
+@import url('../index.css');
+
+.confirmation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.success-banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.success-icon {
+    color: #4abd5d;
+    margin-bottom: 20px;
+}
+
+.success-banner h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.success-banner p {
+    color: #666;
+}
+
+.ticket-card {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px dashed #ddd;
+}
+
+.ticket-header {
+    display: flex;
+    padding: 25px;
+    gap: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.mini-poster {
+    width: 80px;
+    height: 120px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.movie-details h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.movie-details .lang {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.movie-details .meta {
+    color: #888;
+    font-size: 12px;
+}
+
+.ticket-info {
+    padding: 20px 25px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.info-item span {
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+.info-item p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.seats-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background: #fdfdfd;
+}
+
+.seats-info span,
+.price-info span {
+    font-size: 12px;
+    color: #999;
+}
+
+.seats-info p,
+.price-info p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bms-red);
+}
+
+.ticket-footer {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    gap: 30px;
+    background: #f5f5f5;
+}
+
+.qr-box img {
+    width: 70px;
+    height: 70px;
+}
+
+.booking-id span {
+    font-size: 12px;
+    color: #999;
+}
+
+.booking-id p {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.home-btn {
+    margin-top: 40px;
+    background: white;
+    border: 1px solid var(--bms-red);
+    color: var(--bms-red);
+    padding: 12px 40px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.home-btn:hover {
+    background: var(--bms-red);
+    color: white;
+}

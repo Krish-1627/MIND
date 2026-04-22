@@ -1,0 +1,210 @@
+@import url('../index.css');
+
+.seat-selection-page {
+    background-color: white;
+    min-height: 100vh;
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+
+.seat-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: white;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-icon,
+.close-icon {
+    cursor: pointer;
+    color: #333;
+}
+
+.movie-mini-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.movie-mini-info p {
+    font-size: 12px;
+    color: #666;
+}
+
+.ticket-count-badge {
+    border: 1px solid var(--bms-red);
+    color: var(--bms-red);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.grid-container {
+    max-width: 900px;
+    margin: 40px auto;
+    overflow-x: auto;
+    padding: 0 20px;
+}
+
+.screen-indicator {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.screen-curve {
+    height: 8px;
+    width: 300px;
+    margin: 0 auto 10px;
+    background: #eee;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.screen-indicator p {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+.seat-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.seat-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.row-label {
+    font-size: 12px;
+    color: #aaa;
+    width: 20px;
+}
+
+.seats {
+    display: flex;
+    gap: 6px;
+}
+
+.seat {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #4abd5d;
+    color: #4abd5d;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.seat.gap {
+    visibility: hidden;
+}
+
+.seat-gap {
+    width: 20px;
+}
+
+.seat.blocked {
+    background-color: #eee;
+    border-color: #eee;
+    color: #eee;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background-color: #4abd5d;
+    color: white;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 12px;
+    color: #666;
+    background: #fdfdfd;
+    padding: 15px;
+}
+
+.legend .item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.box.available {
+    border: 1px solid #4abd5d;
+}
+
+.box.selected {
+    background: #4abd5d;
+}
+
+.box.blocked {
+    background: #eee;
+}
+
+.footer-action {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.book-now-btn {
+    background: var(--bms-red);
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.book-now-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
